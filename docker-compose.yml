@@ -1,0 +1,6 @@
+services:
+  apiversioning.api:
+    image: ${DOCKER_REGISTRY-}apiversioningapi
+    build:
+      context: .
+      dockerfile: src/ApiVersioning.API/Dockerfile
